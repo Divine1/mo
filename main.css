@@ -19,7 +19,7 @@ body {
       left: 50%;
       transform: translate(-50%, -50%); }
       body .heartimg .content div {
-        background-image: url("/static/images/heart.png");
+        background-image: url("/mo/static/images/heart.png");
         width: 30px;
         height: 30px;
         background-size: 100%;
@@ -35,7 +35,7 @@ body {
     overflow: hidden; }
     body .landing .background {
       position: absolute;
-      background-image: url("/static/images/background1.png");
+      background-image: url("/mo/static/images/background1.png");
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
@@ -63,13 +63,13 @@ body {
         display: flex;
         justify-content: space-around; }
         body .landing .center .bridesnames .groom .img {
-          background-image: url("/static/images/roundmohan.jpg");
+          background-image: url("/mo/static/images/roundmohan.jpg");
           transform: rotate(90deg);
           background-size: 300% !important;
           background-position-y: -51px;
           background-position-x: -27px; }
         body .landing .center .bridesnames .bride .img {
-          background-image: url("/static/images/roundbride.jpg");
+          background-image: url("/mo/static/images/roundbride.jpg");
           transform: rotate(-90deg);
           background-position-x: -84px;
           background-size: 200% !important;
@@ -225,9 +225,9 @@ body {
       color: white;
       font-size: 40px; }
     .main .content .brides .groom .img {
-      background-image: url("/static/images/mohan-landing.jpg"); }
+      background-image: url("/mo/static/images/mohan-landing.jpg"); }
     .main .content .brides .bride .img {
-      background-image: url("/static/images/woman.jpg"); }
+      background-image: url("/mo/static/images/woman.jpg"); }
     .main .content .brides .groom .img,
     .main .content .brides .bride .img {
       position: relative;
