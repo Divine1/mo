@@ -1,0 +1,271 @@
+html, body {
+  height: 100%;
+  width: 100%; }
+
+body {
+  margin: 0px;
+  position: relative;
+  overflow-x: hidden; }
+  body .heartimg {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    background-color: #f1d5ee;
+    z-index: 100; }
+    body .heartimg .content {
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      body .heartimg .content div {
+        background-image: url("/mo/static/images/heart.png");
+        width: 30px;
+        height: 30px;
+        background-size: 100%;
+        animation-name: heartimg-anim;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        animation-direction: alternate; }
+  body .landing {
+    position: relative;
+    height: 100%;
+    width: inherit;
+    overflow: hidden; }
+    body .landing .background {
+      position: absolute;
+      background-image: url("/mo/static/images/background1.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 400px;
+      height: 140px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    body .landing .center {
+      position: relative;
+      top: 5%;
+      width: 300px;
+      margin: 0 auto;
+      text-align: center;
+      color: #e433bb; }
+      body .landing .center .title {
+        font-size: 30px;
+        font-family: 'Great Vibes', cursive;
+        font-weight: bold; }
+      body .landing .center .bridesnames {
+        margin-top: 20px;
+        position: relative;
+        box-sizing: border-box;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-around; }
+        body .landing .center .bridesnames .groom .img {
+          background-image: url("/mo/static/images/roundmohan.jpg");
+          transform: rotate(90deg);
+          background-size: 300% !important;
+          background-position-y: -51px;
+          background-position-x: -27px; }
+        body .landing .center .bridesnames .bride .img {
+          background-image: url("/mo/static/images/roundbride.jpg");
+          transform: rotate(-90deg);
+          background-position-x: -84px;
+          background-size: 200% !important;
+          background-position-y: -9px; }
+        body .landing .center .bridesnames .groom .img, body .landing .center .bridesnames .bride .img {
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 100px;
+          height: 100px;
+          border-radius: 50%; }
+      body .landing .center .daycounter {
+        font-family: 'Permanent Marker', cursive;
+        margin: 3% auto;
+        font-size: 20px; }
+      body .landing .center .daycounter span:nth-child(1) {
+        display: inline-block;
+        margin-right: 5px;
+        animation-name: daycounter-anim;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+        animation-direction: alternate; }
+      body .landing .center .venue {
+        font-family: 'Dancing Script', cursive;
+        margin-top: 50%; }
+      body .landing .center .venue div:nth-child(1) {
+        font-size: 25px;
+        margin-bottom: 6%; }
+      body .landing .center .venue div:not(:nth-child(1)) {
+        font-family: 'Permanent Marker', cursive;
+        font-size: 17px; }
+    body .landing .savedate {
+      position: absolute;
+      bottom: -13%;
+      left: 50%;
+      transform: translate(-50%, -8%);
+      z-index: 1; }
+      body .landing .savedate .container {
+        border-radius: 50%;
+        background-color: rgba(121, 187, 117, 0.6);
+        color: white;
+        z-index: 5; }
+        body .landing .savedate .container div {
+          text-align: center;
+          z-index: 5;
+          opacity: 1;
+          color: white;
+          z-index: 10;
+          font-family: 'Permanent Marker', cursive; }
+      body .landing .savedate .container, body .landing .savedate .container:before {
+        height: 160px;
+        width: 200px; }
+      body .landing .savedate .container:before {
+        content: "";
+        opacity: 0;
+        border-radius: 50%;
+        position: absolute;
+        animation-name: savedate;
+        animation-duration: 1000ms;
+        animation-timing-function: ease;
+        animation-direction: forwards;
+        animation-iteration-count: infinite;
+        z-index: 4; }
+
+@keyframes heartimg-anim {
+  from {
+    transform: scale(1, 1); }
+  to {
+    transform: scale(1.7, 1.7); } }
+
+@keyframes daycounter-anim {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+@keyframes savedate {
+  from {
+    transform: scale(1.3, 1.3);
+    background-color: rgba(121, 187, 117, 0.6);
+    opacity: 1; }
+  to {
+    transform: scale(1.6, 1.6);
+    background-color: #d15790; } }
+
+.main {
+  background-color: white; }
+  .main .content .couple {
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 5% 0%; }
+  .main .content .brides {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    .main .content .brides .groom, .main .content .brides .bride {
+      position: relative;
+      width: 300px;
+      margin-bottom: 30px;
+      overflow: hidden; }
+    .main .content .brides .groom .data,
+    .main .content .brides .bride .data {
+      font-family: 'Dancing Script', cursive; }
+      .main .content .brides .groom .data div:nth-child(1),
+      .main .content .brides .bride .data div:nth-child(1) {
+        font-size: 20px;
+        margin: 34px 0px; }
+    .main .content .brides .groom:before {
+      content: "Mohan"; }
+    .main .content .brides .bride:before {
+      content: "Padma"; }
+    .main .content .brides .groom:before,
+    .main .content .brides .bride:before {
+      font-family: 'Dancing Script', cursive;
+      z-index: 1;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 40px; }
+    .main .content .brides .groom .img {
+      background-image: url("/mo/static/images/mohan-landing.jpg"); }
+    .main .content .brides .bride .img {
+      background-image: url("/mo/static/images/woman.jpg"); }
+    .main .content .brides .groom .img,
+    .main .content .brides .bride .img {
+      position: relative;
+      width: auto;
+      height: 380px;
+      transition: all ease 2s;
+      z-index: 0;
+      overflow: hidden;
+      background-size: cover;
+      background-repeat: no-repeat; }
+    .main .content .brides .groom:hover .img,
+    .main .content .brides .bride:hover .img {
+      transform: scale(1.2); }
+  .main .content .events {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    .main .content .events > .title {
+      font-size: 25px;
+      font-weight: bold;
+      font-family: 'Great Vibes', cursive; }
+    .main .content .events > .content {
+      font-family: 'Sofia', cursive; }
+      .main .content .events > .content .tuesday {
+        margin: 30px 0px; }
+        .main .content .events > .content .tuesday > .title {
+          color: pink;
+          font-weight: bold; }
+        .main .content .events > .content .tuesday .content {
+          display: flex; }
+          .main .content .events > .content .tuesday .content .title {
+            font-weight: bold;
+            margin: 10px 0px; }
+          .main .content .events > .content .tuesday .content > div {
+            margin-top: 20px;
+            margin-right: 20px; }
+      .main .content .events > .content .wednesday {
+        margin: 30px 0px; }
+        .main .content .events > .content .wednesday > .title {
+          color: pink;
+          font-weight: bold; }
+        .main .content .events > .content .wednesday .content {
+          display: flex;
+          justify-content: center; }
+          .main .content .events > .content .wednesday .content .title {
+            font-weight: bold;
+            margin: 10px 0px; }
+          .main .content .events > .content .wednesday .content > div {
+            margin-top: 20px;
+            margin-right: 20px; }
+  .main .content .gallery .title {
+    font-family: 'Great Vibes', cursive;
+    font-size: 25px;
+    text-align: center;
+    margin: 20px 0px; }
+  .main .content .gallery .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+    .main .content .gallery .content .galleryitem {
+      width: 200px;
+      height: 200px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 10px; }
+
