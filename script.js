@@ -37,7 +37,18 @@ galleryData.forEach((function(data,index){
     gallerycontent.appendChild(divtag);
 }))
 
+var modalimageElement = document.getElementById("modalimage");
+
 function clickGalleryImage(index,data){
-    console.log("clickGalleryImage index ",index," data ",data )
+    console.log("clickGalleryImage index ",index," data ",data );
+    modalimageElement.style.display="block";
+    var modalimageclass = document.getElementsByClassName("modalimageclass")[0];
+    modalimageclass.style.backgroundImage = "url("+data+")";
+
 }
 
+function closeImageModal(){
+    console.log("closeImageModal ")
+    modalimageElement.style.display="none";
+
+}
