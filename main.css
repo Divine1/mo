@@ -149,10 +149,11 @@ body {
       position: absolute;
       left: 50%;
       transform: translateX(-50%); }
+    body .modalimage .close:hover {
+      cursor: pointer; }
     body .modalimage .image {
       position: absolute;
-      background-image: url(/static/images/mohan-landing.jpg);
-      background-size: cover;
+      background-size: contain;
       background-position: top;
       background-repeat: no-repeat;
       width: 60%;
