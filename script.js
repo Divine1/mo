@@ -7,7 +7,7 @@
 //gallerycontent
 //document.body.style.backgroundImage = "url('img_tree.png')";
 
-var path="/mo/static/images/gallery/";
+var path="/static/images/gallery/";
 var galleryData=[
     path+"brides1.jpg",
     path+"brides2.jpg",
